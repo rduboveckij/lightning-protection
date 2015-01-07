@@ -1,0 +1,35 @@
+<form role="form">
+    <div class="form-group">
+        <label for="regionName" class="control-label required">Назва підстанції:</label>
+        <input class="form-control" type="text" id="regionName"
+               maxlength="50" placeholder="Введите название" required
+               ng-model="region.name">
+    </div>
+    <div class="form-group">
+        <label for="reliability" class="control-label">
+            Надійність захисту,
+            <var>P<small>3</small>
+            </var>
+            :
+        </label>
+        <select id="reliability"
+                class="form-control"
+                ng-options="value for (key, value) in protectionReliability"
+                ng-model="region.reliability"></select>
+    </div>
+    <div class="form-group">
+        <label for="size" class="control-label required">Розмір території:</label>
+        <div class="input-group">
+            <input class="form-control" type="number" id="size"
+                   min="1" max="999999"
+                   placeholder="Введите длину" required
+                   ng-model="region.size">
+            <span class="input-group-addon">м</span>
+        </div>
+    </div>
+    <h5>
+        <strong>Кординати підстанції:</strong>
+    </h5>
+    <list-of-point points="region.grounds" create="addOrEditRegionPoint"
+                   edit="addOrEditRegionPoint" remove="removeRegionPoint"></list-of-point>
+</form>

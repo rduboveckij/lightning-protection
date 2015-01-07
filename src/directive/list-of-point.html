@@ -1,0 +1,11 @@
+<div class="list-group">
+    <a class="list-group-item" ng-repeat="point in points | orderBy:'created'">
+            <span ng-click="edit(point)">
+                (<var>{{point.x | number:2}}</var>,<var>{{point.y | number:2}}</var>,<var>{{point.z | number:2}}</var>)
+            </span>
+        <span class="glyphicon glyphicon-remove pull-right" ng-click="remove(point)"></span>
+    </a>
+    <a class="list-group-item list-group-item-success text-center" ng-click="create()">
+        Додати кординату
+    </a>
+</div>

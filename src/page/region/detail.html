@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-8">
+        <lightning-protection-region size="region.size" reliability="region.reliability"
+                                     objects="objectDtos" protectors="protectorSplits"
+                                     grounds="region.grounds">
+        </lightning-protection-region>
+    </div>
+    <div class="col-md-4">
+        <tabset justified="true">
+            <tab heading="Підстанція">
+                <div class="config-panel" ng-include="'src/page/region/region.html'"></div>
+            </tab>
+            <tab heading="Технічні об'єкти">
+                <div class="config-panel" ng-include="'src/page/region/objects.html'"></div>
+            </tab>
+            <tab heading="Блискавкозахист">
+                <div class="config-panel" ng-include="'src/page/region/protectors.html'"></div>
+            </tab>
+        </tabset>
+    </div>
+</div>

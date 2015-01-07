@@ -1,0 +1,28 @@
+{
+  "name": "lightning-protection",
+  "version": "0.2.0",
+  "authors": [
+    "rduboveckij <andrus.god@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angular": "~1.2.26",
+    "angular-route": "~1.2.26",
+    "angular-lodash": "0.1.2",
+    "ngstorage": "~0.3.0",
+    "randomcolor": "https://github.com/davidmerfield/randomColor.git",
+    "kineticjs": "~5.1.0",
+    "angularfire": "~0.9.0",
+    "bootstrap": "3.3.1",
+    "angular-bootstrap": "0.12.0"
+  }
+}

@@ -1,0 +1,49 @@
+<div class="modal-header">
+    <h5 class="modal-title">Форма створення або редагування кординати, м</h5>
+</div>
+<div class="modal-body">
+    <form role="form">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <var>x</var>
+                </div>
+                <input class="form-control" type="number"
+                       min="0" max="{{maxSize}}"
+                       placeholder="Введите х" required
+                       ng-model="point.x">
+                <span class="input-group-addon">м</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <var>y</var>
+                </div>
+                <input class="form-control" type="number"
+                       min="0" max="{{maxSize}}"
+                       placeholder="Введите y" required
+                       ng-model="point.y">
+                <span class="input-group-addon">м</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <var>z</var>
+                </div>
+                <input class="form-control" type="number"
+                       min="1" max="{{maxHeight}}"
+                       placeholder="Введите z" required
+                       ng-model="point.z">
+                <span class="input-group-addon">м</span>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="save()">Зберегти</button>
+    <button class="btn btn-warning" ng-click="cancel()">Відмінити</button>
+</div>

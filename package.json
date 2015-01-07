@@ -1,0 +1,14 @@
+{
+    "name": "lightning-protection",
+    "version": "0.0.1",
+    "license": {
+        "type": "MIT"
+    },
+    "devDependencies": {
+        "gulp": "latest",
+        "gulp-uglify": "latest",
+        "gulp-jshint": "latest",
+        "gulp-concat": "latest",
+        "bower": "latest"
+    }
+}
